@@ -262,6 +262,11 @@ body {
     margin: 0 auto;
 }
 
+.waiting-section .subtitle {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 .cta-button {
     display: inline-block;
     background-color: var(--accent-color);
