@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ما در پذیرش ۲۴ به شما نیاز داریم</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>ما در پذیرش ۲۴ به شما نیاز داریم</h1>
+            <p class="subtitle">تا انتظار بیمارها در مطب دکترها را به 00:00 برسانیم</p>
+        </div>
+    </header>
+
+    <nav class="timer-nav">
+        <div class="timer-nav-content">
+            <div class="timer-text">سال <span id="currentYear">۱۳۹۳</span> زمان انتظار بیماران: <span id="waitingTimer">04:50</span></div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="story" class="section">
+            <div class="container">
+                <h2>تا الان از ۴۰۰ دقیقه به ۳۲ دقیقه رسیدیم</h2>
+                <div class="story-content">
+                    <div class="waiting-time-chart">
+                        <canvas id="waitingTimeChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how" class="section">
+            <div class="container">
+                <h2>چطور؟</h2>
+            </div>
+        </section>
+
+        <section id="timeline" class="section timeline-section">
+            <div class="container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot">
+                            <span class="waiting-time">۴۲۰ دقیقه</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>مهم‌ترین اقدامات سال ۱۳۹۱</h3>
+                            <h4 class="waiting-title">زمان انتظار: ۴۲۰ دقیقه</h4>
+                            <ul class="action-list">
+                                <li>بررسی و تحلیل مشکلات موجود در سیستم نوبت‌دهی سنتی</li>
+                                <li>مطالعه سیستم‌های مشابه در کشورهای پیشرفته</li>
+                                <li>طراحی معماری اولیه سیستم نوبت‌دهی آنلاین</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot">
+                            <span class="waiting-time">۳۸۰ دقیقه</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>مهم‌ترین اقدامات سال ۱۳۹۲</h3>
+                            <h4 class="waiting-title">زمان انتظار: ۳۸۰ دقیقه</h4>
+                            <ul class="action-list">
+                                <li>توسعه نسخه اولیه پلتفرم</li>
+                                <li>آزمایش سیستم در چند مطب منتخب</li>
+                                <li>جمع‌آوری بازخورد از پزشکان و بیماران</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot">
+                            <span class="waiting-time">۳۵۰ دقیقه</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>مهم‌ترین اقدامات سال ۱۳۹۳</h3>
+                            <h4 class="waiting-title">زمان انتظار: ۳۵۰ دقیقه</h4>
+                            <ul class="action-list">
+                                <li>بهبود رابط کاربری پلتفرم</li>
+                                <li>اضافه کردن قابلیت جستجوی پزشک</li>
+                                <li>پیاده‌سازی سیستم پرداخت آنلاین</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot">
+                            <span class="waiting-time">۳۰۰ دقیقه</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>مهم‌ترین اقدامات سال ۱۳۹۴</h3>
+                            <h4 class="waiting-title">زمان انتظار: ۳۰۰ دقیقه</h4>
+                            <ul class="action-list">
+                                <li>راه‌اندازی سیستم نوبت‌دهی آنلاین برای مطب‌های خصوصی</li>
+                                <li>پیاده‌سازی سیستم مدیریت صف هوشمند</li>
+                                <li>توسعه اپلیکیشن موبایل برای دسترسی آسان‌تر بیماران</li>
+                                <li>همکاری با مراکز درمانی برای یکپارچه‌سازی سیستم‌ها</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot">
+                            <span class="waiting-time">۲۶۰ دقیقه</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>مهم‌ترین اقدامات سال ۱۳۹۵</h3>
+                            <h4 class="waiting-title">زمان انتظار: ۲۶۰ دقیقه</h4>
+                            <ul class="action-list">
+                                <li>راه‌اندازی سیستم یادآوری نوبت از طریق پیامک و اپلیکیشن</li>
+                                <li>توسعه سیستم مدیریت زمان پزشکان</li>
+                                <li>پیاده‌سازی سیستم تخمین زمان انتظار هوشمند</li>
+                                <li>بهینه‌سازی الگوریتم‌های توزیع نوبت</li>
+                                <li>راه‌اندازی سیستم پشتیبانی ۲۴ ساعته</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot">
+                            <span class="waiting-time">۲۲۰ دقیقه</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>مهم‌ترین اقدامات سال ۱۳۹۶</h3>
+                            <h4 class="waiting-title">زمان انتظار: ۲۲۰ دقیقه</h4>
+                            <ul class="action-list">
+                                <li>راه‌اندازی سیستم نوبت‌دهی برای بیمارستان‌ها</li>
+                                <li>توسعه سیستم مدیریت داروخانه‌ها</li>
+                                <li>پیاده‌سازی سیستم گزارش‌گیری پیشرفته</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot">
+                            <span class="waiting-time">۱۸۰ دقیقه</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>مهم‌ترین اقدامات سال ۱۳۹۷</h3>
+                            <h4 class="waiting-title">زمان انتظار: ۱۸۰ دقیقه</h4>
+                            <ul class="action-list">
+                                <li>راه‌اندازی سیستم مشاوره آنلاین</li>
+                                <li>توسعه سیستم مدیریت پرونده الکترونیک</li>
+                                <li>پیاده‌سازی سیستم مدیریت دارو</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot">
+                            <span class="waiting-time">۱۵۰ دقیقه</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>مهم‌ترین اقدامات سال ۱۳۹۸</h3>
+                            <h4 class="waiting-title">زمان انتظار: ۱۵۰ دقیقه</h4>
+                            <ul class="action-list">
+                                <li>راه‌اندازی سیستم ویزیت آنلاین</li>
+                                <li>توسعه سیستم مدیریت آزمایشگاه‌ها</li>
+                                <li>پیاده‌سازی سیستم مدیریت تصویربرداری</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot">
+                            <span class="waiting-time">۱۲۰ دقیقه</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>مهم‌ترین اقدامات سال ۱۳۹۹</h3>
+                            <h4 class="waiting-title">زمان انتظار: ۱۲۰ دقیقه</h4>
+                            <ul class="action-list">
+                                <li>بهینه‌سازی سیستم ویزیت آنلاین</li>
+                                <li>توسعه سیستم مدیریت داروخانه‌های آنلاین</li>
+                                <li>پیاده‌سازی سیستم مدیریت مراکز درمانی</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot">
+                            <span class="waiting-time">۹۰ دقیقه</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>مهم‌ترین اقدامات سال ۱۴۰۰</h3>
+                            <h4 class="waiting-title">زمان انتظار: ۹۰ دقیقه</h4>
+                            <ul class="action-list">
+                                <li>راه‌اندازی سیستم مدیریت هوشمند صف</li>
+                                <li>توسعه سیستم پیش‌بینی زمان انتظار</li>
+                                <li>پیاده‌سازی سیستم مدیریت داروخانه‌های هوشمند</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot">
+                            <span class="waiting-time">۶۰ دقیقه</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>مهم‌ترین اقدامات سال ۱۴۰۱</h3>
+                            <h4 class="waiting-title">زمان انتظار: ۶۰ دقیقه</h4>
+                            <ul class="action-list">
+                                <li>راه‌اندازی سیستم مدیریت هوشمند دارو</li>
+                                <li>توسعه سیستم مدیریت هوشمند آزمایشگاه</li>
+                                <li>پیاده‌سازی سیستم مدیریت هوشمند تصویربرداری</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot">
+                            <span class="waiting-time">۴۵ دقیقه</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>مهم‌ترین اقدامات سال ۱۴۰۲</h3>
+                            <h4 class="waiting-title">زمان انتظار: ۴۵ دقیقه</h4>
+                            <ul class="action-list">
+                                <li>راه‌اندازی سیستم مدیریت هوشمند مراکز درمانی</li>
+                                <li>توسعه سیستم مدیریت هوشمند داروخانه‌ها</li>
+                                <li>پیاده‌سازی سیستم مدیریت هوشمند آزمایشگاه‌ها</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot">
+                            <span class="waiting-time">۳۲ دقیقه</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>مهم‌ترین اقدامات سال ۱۴۰۳</h3>
+                            <h4 class="waiting-title">زمان انتظار: ۳۲ دقیقه</h4>
+                            <ul class="action-list">
+                                <li>راه‌اندازی سیستم ویزیت آنلاین پیشرفته</li>
+                                <li>توسعه هوش مصنوعی برای پیش‌بینی زمان‌های شلوغ</li>
+                                <li>پیاده‌سازی سیستم مدیریت هوشمند صف</li>
+                                <li>یکپارچه‌سازی با سیستم‌های بیمارستانی</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot">
+                            <span class="waiting-time">۲۵ دقیقه</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>مهم‌ترین اقدامات سال ۱۴۰۴</h3>
+                            <h4 class="waiting-title">زمان انتظار: ۲۵ دقیقه</h4>
+                            <h4 class="waiting-title" style="margin-top: 1rem; color: var(--secondary-color);">کارهایی که تا اینجای سال کرده‌ایم:</h4>
+                            <ul class="action-list">
+                                <li>راه‌اندازی سیستم مدیریت هوشمند دارو</li>
+                                <li>توسعه سیستم مدیریت هوشمند آزمایشگاه</li>
+                                <li>پیاده‌سازی سیستم مدیریت هوشمند تصویربرداری</li>
+                                <li>بهبود سیستم مدیریت هوشمند صف</li>
+                            </ul>
+                            <h4 class="waiting-title" style="margin-top: 1.5rem; color: var(--accent-color);">مسئله‌هایی که اکنون درگیر حل‌شان هستیم:</h4>
+                            <ul class="action-list">
+                                <li>بهبود سیستم نوبت‌دهی برای جلوگیری از تداخل نوبت‌ها و کاهش انتظار</li>
+                                <li>پیاده‌سازی سیستم مدیریت هوشمند صف برای کاهش زمان انتظار</li>
+                                <li>توسعه سیستم یادآوری نوبت برای کاهش فراموشی و تداخل</li>
+                                <li>بهبود سیستم مدیریت زمان پزشکان برای کاهش تاخیر</li>
+                                <li>راه‌اندازی سیستم ویزیت آنلاین برای کاهش نیاز به مراجعه حضوری</li>
+                                <li>توسعه سیستم مدیریت داروخانه‌های آنلاین برای تسهیل تهیه دارو</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="current-issues" class="section current-issues-section">
+            <div class="container">
+                <h2>ادامه مسیر از ۳۲ دقیقه تا انتظار نزدیک به صفر</h2>
+                <p class="subtitle" style="text-align: center;">این‌ها مسئله‌های حل‌نشده کاربران پذیرش ۲۴ است</p>
+                <div class="issues-grid">
+                    <div class="issue-box">
+                        <h3>بهبود سیستم نوبت‌دهی</h3>
+                        <p>تداخل نوبت‌ها و انتظار طولانی بیماران در مطب‌ها</p>
+                        <a href="#" class="issue-cta">توضیحات</a>
+                    </div>
+                    <div class="issue-box">
+                        <h3>مدیریت هوشمند صف</h3>
+                        <p>کاهش زمان انتظار با استفاده از الگوریتم‌های هوشمند</p>
+                        <a href="#" class="issue-cta">توضیحات</a>
+                    </div>
+                    <div class="issue-box">
+                        <h3>یادآوری نوبت</h3>
+                        <p>کاهش فراموشی و تداخل نوبت‌ها با سیستم یادآوری هوشمند</p>
+                        <a href="#" class="issue-cta">توضیحات</a>
+                    </div>
+                    <div class="issue-box">
+                        <h3>مدیریت زمان پزشکان</h3>
+                        <p>کاهش تاخیر پزشکان با سیستم مدیریت زمان هوشمند</p>
+                        <a href="#" class="issue-cta">توضیحات</a>
+                    </div>
+                    <div class="issue-box">
+                        <h3>ویزیت آنلاین</h3>
+                        <p>کاهش نیاز به مراجعه حضوری با سیستم ویزیت آنلاین</p>
+                        <a href="#" class="issue-cta">توضیحات</a>
+                    </div>
+                    <div class="issue-box">
+                        <h3>داروخانه آنلاین</h3>
+                        <p>تسهیل تهیه دارو با سیستم مدیریت داروخانه‌های آنلاین</p>
+                        <a href="#" class="issue-cta">توضیحات</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="waiting" class="section waiting-section">
+            <div class="container">
+                <h2>هدف پذیرش ۲۴ برای شما هم مهم است؟</h2>
+                <p class="subtitle">مشتاق دیدار شما هستیم. فقط چند نکته!</p>
+                <div class="waiting-content">
+                    <div class="info-boxes">
+                        <div class="info-box">
+                            <h3>اینجا حقوق‌بگیر نداریم</h3>
+                            <p>اعضای تیم، هر کدام مدل درآمد و بودجه هزینه اختصاصی خودشان را دارند. مسئله‌های بزرگ‌تر را حل کنید و درآمد بیشتری داشته باشید.</p>
+                        </div>
+                        <div class="info-box">
+                            <h3>مسئله‌های بی‌صاحب نداریم</h3>
+                            <p>فقط مسئله‌هایی را حل می‌کنیم که ذی‌نفع مشخصی دارند؛ مسئله‌ای که صاحب داشته باشد، طبیعتا منطق درآمدی هم خواهند داشت.</p>
+                        </div>
+                        <div class="info-box">
+                            <h3>ریسک بیشتر، افق‌های بلندتر</h3>
+                            <p>ما اینجا امنیت شغلی نداریم. حس حال یک مدیر عامل را خواهید داشت؛ با همان قدرت‌ها و با همان ریسک‌ها و مسئولیت‌ها.</p>
+                        </div>
+                    </div>
+                    <div class="waiting-text">
+                        <a href="https://survey.porsline.ir/s/aYHCRB0" class="cta-button" target="_blank">مشاهده فرصت‌های همکاری</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© ۱۴۰۳ پذیرش۲۴ - تمامی حقوق محفوظ است</p>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html> 
