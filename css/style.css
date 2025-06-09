@@ -425,13 +425,14 @@ body {
 }
 
 .issue-box {
-    background: #fff;
+    background: var(--card-background);
     border-radius: 12px;
     padding: 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 }
 
 .issue-box:hover {
@@ -439,33 +440,35 @@ body {
 }
 
 .issue-box h3 {
-    font-size: 1.3rem;
-    color: #2c3e50;
-    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
 }
 
 .issue-box p {
+    color: var(--text-color);
     font-size: 1rem;
     line-height: 1.6;
-    color: #666;
-    margin-bottom: 1.5rem;
-    flex-grow: 1;
+    margin-bottom: 1rem;
 }
 
-.issue-cta {
+.issue-box .cta-button {
     display: inline-block;
-    background: #3498db;
-    color: #fff;
-    padding: 0.8rem 1.5rem;
-    border-radius: 6px;
+    padding: 0.6rem 1.2rem;
+    background-color: var(--primary-color);
+    color: white;
     text-decoration: none;
+    border-radius: 6px;
     font-weight: 500;
     transition: background-color 0.3s ease;
-    text-align: center;
+    align-self: flex-start;
+    font-size: 0.95rem;
 }
 
-.issue-cta:hover {
-    background: #2980b9;
+.issue-box .cta-button:hover {
+    background-color: var(--primary-color-dark);
+    transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {
@@ -477,18 +480,14 @@ body {
     .issue-box {
         padding: 1.5rem;
     }
-
+    
     .issue-box h3 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
-
-    .issue-box p {
-        font-size: 1rem;
-    }
-
-    .issue-cta {
-        padding: 0.8rem 1.5rem;
-        font-size: 1rem;
+    
+    .issue-box .cta-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
     }
 }
 
